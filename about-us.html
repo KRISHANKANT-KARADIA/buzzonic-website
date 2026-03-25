@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/preloader.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/animation-games.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund+Guides&family=Rancho&display=swap"
+        rel="stylesheet">
+
+    <title>about-us</title>
+
+</head>
+<style>
+    /* header */
+    .groups {
+        position: relative;
+    }
+
+    /* Default hidden */
+    .mega-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    /* Show on hover */
+    .groups:hover .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+</style>
+
+<body>
+
+
+    <!-- Preloader start-->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+            <div class="loading-text">
+                <span> Buzzonic Ventures</span>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+
+
+
+    <div class="min-h-screen bg-white">
+        <!-- HERO SECTION -->
+        <section
+            class="relative py-32 pb-40 bg-gradient-to-br from-[#0f0f23] via-[#1a1a2e] to-[#16213e] overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"> Innovating Digital Growth
+                        <br> <span class="bg-gradient-to-r from-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                            with Buzzonic Ventures </span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8"> We deliver modern digital, business, and technology solutions
+                        that help brands and entrepreneurs grow faster. </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"> About <span
+                                class="bg-gradient-to-r from-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                Buzzonic Ventures </span> </h2>
+                        <div class="space-y-4 text-gray-600 leading-relaxed">
+                            <p> Buzzonic Ventures is a dynamic company focused on delivering innovative digital,
+                                business, and technology solutions. We help businesses grow through smart strategies,
+                                modern technology, and result-driven services. </p>
+                            <p> Our team works with startups, entrepreneurs, and growing businesses to transform ideas
+                                into powerful digital products. We combine creativity, technical expertise, and
+                                strategic thinking to build solutions that deliver real results. </p>
+                            <p> At Buzzonic Ventures, we believe in innovation, quality, and long-term partnerships. Our
+                                mission is to empower brands and entrepreneurs with reliable digital solutions that
+                                drive sustainable growth and success. </p>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-200">
+                            <div>
+                                <div
+                                    class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                    15+ </div>
+                                <div class="text-sm text-gray-500 mt-1">Years Experience</div>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                    13+ </div>
+                                <div class="text-sm text-gray-500 mt-1">Experts</div>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-yellow-500 bg-clip-text text-transparent">
+                                    112+ </div>
+                                <div class="text-sm text-gray-500 mt-1">Projects</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl"> <img
+                                src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg"
+                                class="w-full h-[500px] object-cover"> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Modal -->
+    <script>
+        const modal = document.getElementById("getQuoteModal");
+        const openBtn = document.getElementById("getQuoteBtn");
+        const closeBtn = document.getElementById("closeQuoteModal");
+
+        // Open Modal
+        openBtn.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        // Close Modal (X button)
+        closeBtn.addEventListener("click", function () {
+            modal.classList.add("hidden");
+        });
+
+        // Close when clicking outside modal
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <!-- header scroll change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const header = document.getElementById("mainHeader");
+            const links = document.querySelectorAll(".menu-link");
+
+            function handleScroll() {
+
+                // Only apply if screen width < 992px
+                if (window.innerWidth > 992) {
+
+                    if (window.scrollY > 50) {
+
+                        header.classList.remove("bg-transparent");
+                        header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.remove("text-white", "hover:text-pink-400");
+                            link.classList.add("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    } else {
+
+                        header.classList.add("bg-transparent");
+                        header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.add("text-white", "hover:text-pink-400");
+                            link.classList.remove("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    }
+
+                } else {
+                    // Desktop pe always transparent rakho
+                    header.classList.add("bg-transparent");
+                    header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                    links.forEach(link => {
+                        link.classList.add("text-white", "hover:text-pink-400");
+                        link.classList.remove("text-gray-700", "hover:text-pink-600");
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", handleScroll);
+
+        });
+    </script>
+
+
+
+    <script>
+        // hover open in web
+        const menuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenuBtn = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenuBtn.classList.toggle("hidden");
+        });
+
+
+        // mobile resp.. opne acc
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll("#mobile-drop-btn");
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    const content = btn.parentElement.querySelector("#mobile-drop-content");
+                    const arrow = btn.querySelector(".lucide-chevron-down");
+                    content.classList.toggle("hidden");
+                    arrow.classList.toggle("rotate-180");
+                });
+            });
+        });
+    </script>
+
+
+    <!-- preloader -->
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.display = "none";
+            document.querySelector(".preloader-bg").style.display = "none";
+        });
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>

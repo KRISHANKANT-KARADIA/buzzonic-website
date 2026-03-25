@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Main CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/preloader.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/animation-games.css">
+
+
+    <title>ai-integration</title>
+
+</head>
+<style>
+    /* header */
+    .groups {
+        position: relative;
+    }
+
+    /* Default hidden */
+    .mega-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    /* Show on hover */
+    .groups:hover .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+</style>
+
+<body>
+
+
+    <!-- Preloader start-->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+            <div class="loading-text">
+                <span> Buzzonic Ventures</span>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+
+
+
+
+
+
+
+    <div class="min-h-screen bg-[#05050f] text-white overflow-x-hidden">
+
+        <section class="relative min-h-[85vh] flex items-center pt-20 overflow-hidden"><canvas class="absolute inset-0"
+                width="2626" height="674"></canvas>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#05050f]/50 via-transparent to-[#05050f]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-20">
+                <div class="text-center max-w-5xl mx-auto" style="opacity: 1; transform: none;">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-indigo-500/10 border border-blue-500/20 mb-5"
+                        style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-plug w-4 h-4 text-blue-400" aria-hidden="true">
+                            <path d="M12 22v-5"></path>
+                            <path d="M15 8V2"></path>
+                            <path d="M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z"></path>
+                            <path d="M9 8V2"></path>
+                        </svg><span class="text-blue-400 text-sm font-medium">AI Integrations</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-5"><span
+                            class="bg-gradient-to-r from-blue-400 via-indigo-400 to-violet-400 bg-clip-text text-transparent">AI
+                            Integration</span><span class="text-white"> </span>
+                    </h1>
+                    <p class="text-base md:text-lg text-gray-400 mb-6 max-w-3xl mx-auto">We offer professional <strong
+                            class="text-gray-300">AI integration company</strong>, Services to connect Artificial
+                        Intelligence solutions with your existing business systems. Our team integrates AI automation,
+                        machine learning, and smart data processing to improve efficiency and decision-making. We focus
+                        on seamless, secure, and scalable AI integration for modern digital businesses.
+
+                    </p>
+
+                    <div class="flex justify-center mb-10" style="opacity: 1; transform: none;"><button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-9 relative overflow-hidden group bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 hover:from-blue-400 hover:via-indigo-400 hover:to-violet-400 text-white font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(99,102,241,0.4)] px-7 py-5 text-base">
+                            <div
+                                class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent">
+                            </div><span class="relative z-10 flex items-center gap-2">Start AI Integration <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></span>
+                        </button></div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="relative h-8 overflow-hidden">
+            <div class="absolute inset-0 flex items-center" style="opacity: 1;">
+                <div class="w-full h-[2px] bg-gradient-to-r from-blue-500/50 via-indigo-500/50 to-blue-500/50"
+                    style="transform: none;"></div>
+            </div>
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-indigo-400 shadow-lg shadow-blue-500/50"
+                    style="transform: none;"></div>
+            </div>
+        </div>
+
+
+
+        <section class="py-12 md:py-16 relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#05050f] via-[#080818] to-[#05050f]"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                <!-- heading -->
+                <div class="text-center mb-10">
+                    <span
+                        class="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-3">
+                        AI Integration Capabilities
+                    </span>
+
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                        What Makes Our
+                        <span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                            AI Integrations Powerful
+                        </span>
+                    </h2>
+                </div>
+
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    <!-- card 1 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-blue-500/30 rounded-xl p-5 transition-all group">
+
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M12 22v-5M15 8V2M17 8a1 1 0 011 1v4a4 4 0 01-4 4h-4a4 4 0 01-4-4V9a1 1 0 011-1zM9 8V2" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">API-Based AI Integration</h3>
+                        <p class="text-gray-400 text-sm">
+                            Connect AI models and services with your applications using REST APIs, GraphQL, and modern
+                            integration frameworks.
+                        </p>
+
+                    </div>
+
+
+                    <!-- card 2 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-blue-500/30 rounded-xl p-5 transition-all group">
+
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M3 12a9 9 0 0115.55-6.36L21 8M21 3v5h-5M21 12a9 9 0 01-15.55 6.36L3 16M3 21v-5h5" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Real-Time Data Synchronization</h3>
+                        <p class="text-gray-400 text-sm">
+                            Enable real-time data flow between AI models and your business systems for faster insights
+                            and automation.
+                        </p>
+
+                    </div>
+
+
+                    <!-- card 3 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-blue-500/30 rounded-xl p-5 transition-all group">
+
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Secure AI Infrastructure</h3>
+                        <p class="text-gray-400 text-sm">
+                            Enterprise-grade AI integrations with advanced security, encryption, and compliance
+                            standards.
+                        </p>
+
+                    </div>
+
+
+                    <!-- card 4 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-blue-500/30 rounded-xl p-5 transition-all group">
+
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                                <path d="M3 12A9 3 0 0 0 21 12" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Legacy System Integration</h3>
+                        <p class="text-gray-400 text-sm">
+                            Integrate modern AI technologies with legacy ERP, CRM, and enterprise platforms.
+                        </p>
+
+                    </div>
+
+
+                    <!-- card 5 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-blue-500/30 rounded-xl p-5 transition-all group">
+
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Cloud AI Deployment</h3>
+                        <p class="text-gray-400 text-sm">
+                            Deploy AI integrations across AWS, Azure, and Google Cloud with scalable architecture.
+                        </p>
+
+                    </div>
+
+
+                    <!-- card 6 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-blue-500/30 rounded-xl p-5 transition-all group">
+
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    d="M2.062 12.348a1 1 0 010-.696 10.75 10.75 0 0119.876 0 1 1 0 010 .696 10.75 10.75 0 01-19.876 0" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">AI Monitoring & Analytics</h3>
+                        <p class="text-gray-400 text-sm">
+                            Track performance, monitor AI models, and gain insights through powerful analytics
+                            dashboards.
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="py-12 md:py-16 relative">
+
+            <div class="absolute inset-0 bg-[#05050f]"></div>
+
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                <div class="relative">
+
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 rounded-3xl blur-lg opacity-30">
+                    </div>
+
+                    <div class="relative rounded-3xl p-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500">
+
+                        <div class="bg-[#0a0a1f] rounded-[22px] p-8 md:p-10 text-center">
+
+                            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-white">
+                                Ready to Power Your Business with
+                                <span
+                                    class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                                    AI Integration?
+                                </span>
+                            </h2>
+
+                            <p class="text-gray-400 mb-6 max-w-2xl mx-auto text-sm">
+                                Book a free consultation with our AI experts and discover how intelligent integrations
+                                can automate workflows, enhance customer experiences, and unlock new business
+                                opportunities.
+                            </p>
+
+                            <button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 shadow h-9 relative overflow-hidden group bg-gradient-to-r from-blue-500 via-indigo-500 to-violet-500 hover:from-blue-400 hover:via-indigo-400 hover:to-violet-400 text-white font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(99,102,241,0.4)] px-8 py-5 text-base">
+
+                                <div
+                                    class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent">
+                                </div>
+
+                                <span class="relative z-10 flex items-center gap-2">
+                                    Schedule Free AI Consultation
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-arrow-right w-5 h-5"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+
+                                </span>
+
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="py-16 md:py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="text-center mb-12">
+
+                    <span
+                        class="inline-block px-4 py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 text-sm font-medium mb-4">
+                        AI Integration Services
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Powerful <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                            AI Integration Solutions
+                        </span>
+                    </h2>
+
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Seamlessly integrate artificial intelligence into your applications, workflows, and business
+                        systems.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- OpenAI Integration -->
+                    <a class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                        href="/ai-services/openai-integration">
+
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-brain w-6 h-6 text-cyan-400"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M12 18V5" />
+                                <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            OpenAI API Integration
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Integrate GPT models for chatbots, automation, and intelligent applications.
+                        </p>
+
+                        <span
+                            class="inline-flex items-center text-cyan-400 text-sm font-medium group-hover:gap-2 transition-all">
+                            Learn More
+                        </span>
+
+                    </a>
+
+
+                    <!-- AI Chatbot Integration -->
+                    <a class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                        href="/ai-services/chatbot-integration">
+
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="lucide lucide-message-square w-6 h-6 text-cyan-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M22 17a2 2 0 0 1-2 2H6l-4 4V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            AI Chatbot Integration
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Integrate intelligent chatbots into websites, apps, and messaging platforms.
+                        </p>
+
+                        <span class="inline-flex items-center text-cyan-400 text-sm font-medium">
+                            Learn More
+                        </span>
+
+                    </a>
+
+
+                    <!-- CRM Integration -->
+                    <a class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                        href="/ai-services/crm-ai-integration">
+
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-users w-6 h-6 text-cyan-400"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5" />
+                                <circle cx="9" cy="7" r="4" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            CRM AI Integration
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Enhance CRM systems with AI-powered automation and customer insights.
+                        </p>
+
+                        <span class="inline-flex items-center text-cyan-400 text-sm font-medium">
+                            Learn More
+                        </span>
+
+                    </a>
+
+
+                    <!-- Workflow Automation -->
+                    <a class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                        href="/ai-services/workflow-automation">
+
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-zap w-6 h-6 text-cyan-400"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            AI Workflow Automation
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Automate repetitive tasks and processes with intelligent AI systems.
+                        </p>
+
+                        <span class="inline-flex items-center text-cyan-400 text-sm font-medium">
+                            Learn More
+                        </span>
+
+                    </a>
+
+
+                    <!-- Cloud AI Integration -->
+                    <a class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                        href="/ai-services/cloud-ai-integration">
+
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-cloud w-6 h-6 text-cyan-400"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            Cloud AI Integration
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Deploy and integrate AI models with AWS, Azure, and Google Cloud.
+                        </p>
+
+                        <span class="inline-flex items-center text-cyan-400 text-sm font-medium">
+                            Learn More
+                        </span>
+
+                    </a>
+
+
+                    <!-- Data Integration -->
+                    <a class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300"
+                        href="/ai-services/data-ai-integration">
+
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-database w-6 h-6 text-cyan-400"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+                            </svg>
+
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            AI Data Integration
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Connect AI systems with databases, analytics platforms, and enterprise tools.
+                        </p>
+
+                        <span class="inline-flex items-center text-cyan-400 text-sm font-medium">
+                            Learn More
+                        </span>
+
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Modal -->
+    <script>
+        const modal = document.getElementById("getQuoteModal");
+        const openBtn = document.getElementById("getQuoteBtn");
+        const closeBtn = document.getElementById("closeQuoteModal");
+
+        // Open Modal
+        openBtn.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        // Close Modal (X button)
+        closeBtn.addEventListener("click", function () {
+            modal.classList.add("hidden");
+        });
+
+        // Close when clicking outside modal
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <!-- header scroll change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const header = document.getElementById("mainHeader");
+            const links = document.querySelectorAll(".menu-link");
+
+            function handleScroll() {
+
+                // Only apply if screen width < 992px
+                if (window.innerWidth > 992) {
+
+                    if (window.scrollY > 50) {
+
+                        header.classList.remove("bg-transparent");
+                        header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.remove("text-white", "hover:text-pink-400");
+                            link.classList.add("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    } else {
+
+                        header.classList.add("bg-transparent");
+                        header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.add("text-white", "hover:text-pink-400");
+                            link.classList.remove("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    }
+
+                } else {
+                    // Desktop pe always transparent rakho
+                    header.classList.add("bg-transparent");
+                    header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                    links.forEach(link => {
+                        link.classList.add("text-white", "hover:text-pink-400");
+                        link.classList.remove("text-gray-700", "hover:text-pink-600");
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", handleScroll);
+
+        });
+    </script>
+
+
+
+    <script>
+        // hover open in web
+        const menuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenuBtn = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenuBtn.classList.toggle("hidden");
+        });
+
+
+        // mobile resp.. opne acc
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll("#mobile-drop-btn");
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    const content = btn.parentElement.querySelector("#mobile-drop-content");
+                    const arrow = btn.querySelector(".lucide-chevron-down");
+                    content.classList.toggle("hidden");
+                    arrow.classList.toggle("rotate-180");
+                });
+            });
+        });
+    </script>
+
+
+    <!-- preloader -->
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.display = "none";
+            document.querySelector(".preloader-bg").style.display = "none";
+        });
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>

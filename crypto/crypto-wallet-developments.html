@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Main CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/preloader.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/animation-games.css">
+
+
+    <title>Crypto Wallet Development</title>
+
+</head>
+<style>
+    /* header */
+    .groups {
+        position: relative;
+    }
+
+    /* Default hidden */
+    .mega-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    /* Show on hover */
+    .groups:hover .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+</style>
+
+<body>
+
+
+    <!-- Preloader start-->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+            <div class="loading-text">
+                <span> Buzzonic Ventures</span>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+
+
+
+
+
+    <div class="min-h-screen bg-[#0a0a0a]">
+
+        <!-- HERO SECTION -->
+        <section
+            class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-900 via-amber-950 to-slate-900">
+
+            <!-- Background Effects -->
+            <div class="absolute top-20 right-20 opacity-20 animate-ping">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-wallet-icon lucide-wallet w-80 h-80 text-white">
+                    <path
+                        d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+                    <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+                </svg>
+                <span class=" block text-white mb-2 animate-fade-in-up drop-shadow-2xl"
+                    style="animation-delay: 0.1s;">Bitcoin</span>
+
+            </div>
+
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center py-20 md:py-32">
+
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full mb-6 backdrop-blur-sm">
+                    <span class="text-sm font-medium text-white">
+                        Professional Crypto Wallet Development
+                    </span>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-pulse">
+                    Crypto Wallet <br> Development Services
+                </h1>
+
+                <div class="pt-8 border-t border-gray-700 max-w-3xl mx-auto">
+                    <p class="text-lg text-gray-200 mb-6">
+                        Build a secure and scalable Crypto Wallet with our advanced Crypto Wallet Development Services.
+                        We create multi-currency crypto wallets, blockchain wallets, and decentralized wallet solutions
+                        with high-level encryption, private key protection, and seamless transaction features. Our
+                        cryptocurrency wallet development supports Bitcoin, Ethereum, and multiple digital assets with
+                        user-friendly interfaces for web and mobile platforms. Launch a powerful digital asset wallet
+                        with enhanced security, fast transactions, and complete blockchain integration.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 max-w-4xl mx-auto">
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-5">
+                        <h3 class="text-white font-semibold">Multi-Chain Support</h3>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-5">
+                        <h3 class="text-white font-semibold">Secure Private Keys</h3>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-5">
+                        <h3 class="text-white font-semibold">Biometric Authentication</h3>
+                    </div>
+
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-5">
+                        <h3 class="text-white font-semibold">DeFi Integration</h3>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-4 mt-10 text-sm text-gray-300">
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full">
+                        Cold & Hot Wallet Security
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full">
+                        User Friendly Interface
+                    </span>
+
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full">
+                        24/7 Technical Support
+                    </span>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="py-16 lg:py-20 bg-white relative overflow-hidden">
+
+            <div
+                class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(16,185,129,0.05)_0%,_transparent_50%)]">
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                    <!-- LEFT CONTENT -->
+                    <div>
+
+                        <span
+                            class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold uppercase tracking-wider mb-5">
+                            Understanding the Basics
+                        </span>
+
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
+                            What Is Crypto<br class="hidden sm:block">
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-green-500">
+                                Wallet Development?
+                            </span>
+                        </h2>
+
+                        <div class="space-y-5 text-slate-600 text-base sm:text-lg leading-relaxed">
+
+                            <p>
+                                <strong class="text-slate-900">Crypto wallet development</strong> is the process of
+                                creating
+                                secure digital wallets that allow users to store, send, receive, and manage
+                                cryptocurrencies
+                                such as Bitcoin, Ethereum, and other digital assets safely.
+                            </p>
+
+                            <p>
+                                These wallets include advanced security features like private key encryption,
+                                multi-factor
+                                authentication, and backup recovery systems. They also support multiple blockchains and
+                                provide a user-friendly interface for managing digital assets efficiently.
+                            </p>
+
+                        </div>
+
+                        <!-- WHO NEEDS -->
+                        <div
+                            class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-emerald-50 to-green-50 border border-emerald-100">
+
+                            <h3 class="text-lg font-bold text-slate-900 mb-4">
+                                Who Needs Crypto Wallet Development?
+                            </h3>
+
+                            <div class="grid sm:grid-cols-3 gap-4">
+
+                                <div class="text-center">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-white border border-emerald-200 flex items-center justify-center mx-auto mb-2 shadow-sm">
+                                        🚀
+                                    </div>
+                                    <div class="text-slate-900 font-semibold text-sm">Startups</div>
+                                    <div class="text-slate-500 text-xs">Launching crypto wallet apps</div>
+                                </div>
+
+                                <div class="text-center">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-white border border-emerald-200 flex items-center justify-center mx-auto mb-2 shadow-sm">
+                                        🏢
+                                    </div>
+                                    <div class="text-slate-900 font-semibold text-sm">Enterprises</div>
+                                    <div class="text-slate-500 text-xs">Integrating blockchain payments</div>
+                                </div>
+
+                                <div class="text-center">
+                                    <div
+                                        class="w-12 h-12 rounded-xl bg-white border border-emerald-200 flex items-center justify-center mx-auto mb-2 shadow-sm">
+                                        💰
+                                    </div>
+                                    <div class="text-slate-900 font-semibold text-sm">Crypto Users</div>
+                                    <div class="text-slate-500 text-xs">Securely managing digital assets</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT CONTENT -->
+                    <div class="space-y-6">
+
+                        <!-- COMPARISON -->
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+
+                            <h3 class="text-lg font-bold text-slate-900 mb-5">
+                                Traditional Banking vs Crypto Wallets
+                            </h3>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                                <!-- TRADITIONAL -->
+                                <div class="p-4 rounded-xl bg-white border border-slate-200">
+
+                                    <div class="font-semibold text-slate-700 mb-3">
+                                        Traditional Banking
+                                    </div>
+
+                                    <ul class="space-y-2 text-sm text-slate-500">
+                                        <li>• Limited banking hours</li>
+                                        <li>• Slow international transfers</li>
+                                        <li>• High transaction fees</li>
+                                        <li>• Third-party control</li>
+                                    </ul>
+
+                                </div>
+
+                                <!-- CRYPTO -->
+                                <div
+                                    class="p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200">
+
+                                    <div class="font-semibold text-slate-900 mb-3">
+                                        Crypto Wallet
+                                    </div>
+
+                                    <ul class="space-y-2 text-sm text-slate-700">
+                                        <li>✓ 24/7 global access</li>
+                                        <li>✓ Instant crypto transfers</li>
+                                        <li>✓ Lower transaction costs</li>
+                                        <li>✓ Full control of digital assets</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- FEATURES -->
+                        <div class="grid grid-cols=2 gap-4">
+
+                            <div
+                                class="p-4 rounded-xl bg-white border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all">
+                                <div class="text-slate-900 font-semibold text-sm">Private Key Security</div>
+                                <div class="text-slate-500 text-xs">Encrypted key storage</div>
+                            </div>
+
+                            <div
+                                class="p-4 rounded-xl bg-white border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all">
+                                <div class="text-slate-900 font-semibold text-sm">Multi-Currency Support</div>
+                                <div class="text-slate-500 text-xs">Supports multiple cryptocurrencies</div>
+                            </div>
+
+                            <div
+                                class="p-4 rounded-xl bg-white border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all">
+                                <div class="text-slate-900 font-semibold text-sm">Biometric Security</div>
+                                <div class="text-slate-500 text-xs">Fingerprint & face authentication</div>
+                            </div>
+
+                            <div
+                                class="p-4 rounded-xl bg-white border border-slate-200 hover:border-emerald-300 hover:shadow-md transition-all">
+                                <div class="text-slate-900 font-semibold text-sm">Backup & Recovery</div>
+                                <div class="text-slate-500 text-xs">Secure seed phrase recovery</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="py-20 lg:py-28 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden">
+
+            <div class="absolute inset-0">
+                <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-amber-100/40 rounded-full blur-[100px]">
+                </div>
+                <div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-orange-100/40 rounded-full blur-[80px]">
+                </div>
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- HEADING -->
+                <div class="text-center mb-14">
+
+                    <span
+                        class="inline-block px-4 py-2 rounded-full bg-amber-100 text-amber-700 text-sm font-bold uppercase tracking-wider mb-5 border border-amber-200">
+                        Why Choose Us
+                    </span>
+
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-5">
+                        Why <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-red-500">
+                            Our Crypto Wallet Development
+                        </span> Services Stand Out
+                    </h2>
+
+                    <p class="text-slate-600 text-lg max-w-2xl mx-auto">
+                        We deliver secure, scalable, and user-friendly crypto wallet solutions that help businesses
+                        and startups manage digital assets safely across multiple blockchain networks.
+                    </p>
+
+                </div>
+
+                <!-- STATS -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+
+                    <div
+                        class="text-center p-6 rounded-2xl bg-white border border-slate-200 shadow-lg hover:shadow-xl transition">
+                        <div class="text-3xl md:text-4xl font-black text-slate-900">10+</div>
+                        <div class="text-slate-500 text-sm font-medium">Years Blockchain Experience</div>
+                    </div>
+
+                    <div
+                        class="text-center p-6 rounded-2xl bg-white border border-slate-200 shadow-lg hover:shadow-xl transition">
+                        <div class="text-3xl md:text-4xl font-black text-slate-900">100+</div>
+                        <div class="text-slate-500 text-sm font-medium">Crypto Wallets Developed</div>
+                    </div>
+
+                    <div
+                        class="text-center p-6 rounded-2xl bg-white border border-slate-200 shadow-lg hover:shadow-xl transition">
+                        <div class="text-3xl md:text-4xl font-black text-slate-900">$1B+</div>
+                        <div class="text-slate-500 text-sm font-medium">Assets Protected</div>
+                    </div>
+
+                    <div
+                        class="text-center p-6 rounded-2xl bg-white border border-slate-200 shadow-lg hover:shadow-xl transition">
+                        <div class="text-3xl md:text-4xl font-black text-slate-900">99.99%</div>
+                        <div class="text-slate-500 text-sm font-medium">Wallet Security Reliability</div>
+                    </div>
+
+                </div>
+
+                <!-- FEATURES -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                    <div
+                        class="group p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Multi-Currency Support</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Wallets supporting multiple cryptocurrencies including Bitcoin, Ethereum, BNB, and other
+                            tokens.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Advanced Wallet Security</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Enterprise-grade security with private key encryption, biometric login, and multi-factor
+                            authentication.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Hot & Cold Wallet Integration</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Secure digital asset storage using both hot wallets for quick access and cold wallets for
+                            long-term safety.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Custom Wallet Development</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Fully customized crypto wallet solutions tailored to your business model and blockchain
+                            requirements.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">DeFi & NFT Integration</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Seamless integration with DeFi platforms, NFT marketplaces, and decentralized applications.
+                        </p>
+                    </div>
+
+                    <div
+                        class="group p-6 rounded-2xl bg-white border border-slate-200 shadow-md hover:shadow-xl transition">
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Maintenance & Technical Support</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Continuous monitoring, security updates, and technical support to keep your crypto wallet
+                            secure.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- SERVICES -->
+        <section class="py-20 bg-slate-900">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <h2 class="text-center text-4xl font-bold text-white mb-12">
+                    Crypto Wallet Features
+                </h2>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="p-6 bg-white/5 rounded-xl border border-white/10 text-white">
+                        Multi Currency Support
+                    </div>
+
+                    <div class="p-6 bg-white/5 rounded-xl border border-white/10 text-white">
+                        Instant Crypto Transfers
+                    </div>
+
+                    <div class="p-6 bg-white/5 rounded-xl border border-white/10 text-white">
+                        Biometric Authentication
+                    </div>
+
+                    <div class="p-6 bg-white/5 rounded-xl border border-white/10 text-white">
+                        DeFi & NFT Integration
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="py-24 bg-gradient-to-r from-[#F0B90B] via-[#F8D12F] to-[#F0B90B]">
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-[#0B0E11] mb-6">
+                    Ready to Build Your Crypto Wallet with Buzzonic?
+                </h2>
+
+                <p class="text-[#0B0E11]/80 mb-8 text-lg">
+                    Launch a secure and scalable crypto wallet platform with our expert blockchain developers.
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-4">
+
+                    <a class="inline-flex items-center gap-2 px-8 py-4 bg-[#0B0E11] text-white font-bold rounded-lg hover:bg-[#1E2329] transition-all"
+                        href="../contact.html">
+                        Schedule Consultation
+                    </a>
+
+                    <a class="inline-flex items-center gap-2 px-8 py-4 bg-transparent text-[#0B0E11] font-bold rounded-lg border-2 border-[#0B0E11] hover:bg-[#0B0E11]/10 transition-all"
+                        href="../contact.html">
+                        Send Requirements
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Modal -->
+    <script>
+        const modal = document.getElementById("getQuoteModal");
+        const openBtn = document.getElementById("getQuoteBtn");
+        const closeBtn = document.getElementById("closeQuoteModal");
+
+        // Open Modal
+        openBtn.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        // Close Modal (X button)
+        closeBtn.addEventListener("click", function () {
+            modal.classList.add("hidden");
+        });
+
+        // Close when clicking outside modal
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <!-- header scroll change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const header = document.getElementById("mainHeader");
+            const links = document.querySelectorAll(".menu-link");
+
+            function handleScroll() {
+
+                // Only apply if screen width < 992px
+                if (window.innerWidth > 992) {
+
+                    if (window.scrollY > 50) {
+
+                        header.classList.remove("bg-transparent");
+                        header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.remove("text-white", "hover:text-pink-400");
+                            link.classList.add("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    } else {
+
+                        header.classList.add("bg-transparent");
+                        header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.add("text-white", "hover:text-pink-400");
+                            link.classList.remove("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    }
+
+                } else {
+                    // Desktop pe always transparent rakho
+                    header.classList.add("bg-transparent");
+                    header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                    links.forEach(link => {
+                        link.classList.add("text-white", "hover:text-pink-400");
+                        link.classList.remove("text-gray-700", "hover:text-pink-600");
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", handleScroll);
+
+        });
+    </script>
+
+
+
+    <script>
+        // hover open in web
+        const menuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenuBtn = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenuBtn.classList.toggle("hidden");
+        });
+
+
+        // mobile resp.. opne acc
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll("#mobile-drop-btn");
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    const content = btn.parentElement.querySelector("#mobile-drop-content");
+                    const arrow = btn.querySelector(".lucide-chevron-down");
+                    content.classList.toggle("hidden");
+                    arrow.classList.toggle("rotate-180");
+                });
+            });
+        });
+    </script>
+
+
+    <!-- preloader -->
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.display = "none";
+            document.querySelector(".preloader-bg").style.display = "none";
+        });
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Main CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/preloader.css" rel="stylesheet" />
+
+    <title>Android App Developments</title>
+
+</head>
+<style>
+    /* header */
+    .groups {
+        position: relative;
+    }
+
+    /* Default hidden */
+    .mega-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    /* Show on hover */
+    .groups:hover .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+</style>
+
+<body>
+
+
+    <!-- Preloader start-->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+            <div class="loading-text">
+                <span> Buzzonic Ventures</span>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+
+
+
+
+
+    <div class="min-h-screen bg-white overflow-x-hidden">
+        <section
+            class="relative min-h-[90vh] flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-emerald-50/30 overflow-hidden">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute top-20 left-[10%] w-72 h-72 bg-emerald-200/40 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-[10%] w-96 h-96 bg-teal-200/30 rounded-full blur-3xl"></div>
+            </div>
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center py-20">
+                <div
+                    class="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-full mb-8 shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-monitor w-5 h-5 text-emerald-600" aria-hidden="true">
+                        <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                        <line x1="8" x2="16" y1="21" y2="21"></line>
+                        <line x1="12" x2="12" y1="17" y2="21"></line>
+                    </svg><span class="text-sm text-gray-600 font-medium">Google Certified Developer Partner</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">Android App<span
+                        class="block bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">Development
+                        Services</span></h1>
+
+                <div class="pt-8 border-t border-gray-200">
+                    <p class="text-md text-gray-400 mb-6">
+                        We provide professional Android App Development services to build secure, scalable, and
+                        high-performance Android mobile applications. Our expert developers create custom Android apps,
+                        UI/UX optimized applications, and business Android solutions using the latest Android SDK and
+                        mobile technologies. We focus on fast, responsive, and user-friendly Android app development to
+                        help businesses grow in the mobile app market.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-gray-100 relative overflow-hidden" id="services">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16"><span
+                        class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">Our
+                        Services</span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Android Development
+                        Services<span
+                            class="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">We
+                            Offer</span></h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto text-lg">Comprehensive Android solutions for every
+                        platform and use case</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-monitor w-7 h-7 text-emerald-600"
+                                aria-hidden="true">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Android App Consultation</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Strategic guidance on Android development
+                            approach, tech stack selection, and market positioning.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Market
+                                Analysis</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Tech
+                                Assessment</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Strategy</span>
+                        </div>
+                    </div>
+                    <div
+                        class="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-code w-7 h-7 text-emerald-600"
+                                aria-hidden="true">
+                                <path d="m16 18 6-6-6-6"></path>
+                                <path d="m8 6-6 6 6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Custom Android Development</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Feature-rich Android applications using
+                            Kotlin and Java with the latest Android SDKs and Jetpack libraries.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Kotlin/Java</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Jetpack
+                                Compose</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Material 3</span>
+                        </div>
+                    </div>
+                    <div
+                        class="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-tablet w-7 h-7 text-emerald-600"
+                                aria-hidden="true">
+                                <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                                <line x1="12" x2="12.01" y1="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Android UI/UX Design</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Material Design 3 compliant interfaces
+                            that deliver intuitive, engaging user experiences.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Material Design
+                                3</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">User-Centric</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Adaptive UI</span>
+                        </div>
+                    </div>
+                    <div
+                        class="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-watch w-7 h-7 text-emerald-600"
+                                aria-hidden="true">
+                                <path d="M12 10v2.2l1.6 1"></path>
+                                <path d="m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05"></path>
+                                <path d="m7.88 16.36.8 4a2 2 0 0 0 2 1.61h2.72a2 2 0 0 0 2-1.61l.81-4.05"></path>
+                                <circle cx="12" cy="12" r="6"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Android Wear Development</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Smartwatch apps for Wear OS with health
+                            tracking, notifications, and seamless phone sync.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Wear
+                                OS</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Health
+                                Services</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Tiles API</span>
+                        </div>
+                    </div>
+                    <div
+                        class="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-tv w-7 h-7 text-emerald-600"
+                                aria-hidden="true">
+                                <path d="m17 2-5 5-5-5"></path>
+                                <rect width="20" height="15" x="2" y="7" rx="2"></rect>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Android TV Development</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Immersive big-screen experiences for
+                            Android TV and Google TV platforms.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Leanback
+                                Library</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">4K
+                                Support</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Voice
+                                Control</span></div>
+                    </div>
+                    <div
+                        class="group p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shield w-7 h-7 text-emerald-600"
+                                aria-hidden="true">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Android Testing &amp; QA</h3>
+                        <p class="text-gray-600 text-sm mb-4 leading-relaxed">Comprehensive testing across 20,000+
+                            device configurations for flawless performance.</p>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Device
+                                Fragmentation</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">Firebase Test
+                                Lab</span><span
+                                class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full">CI/CD</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 bg-white relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-emerald-50 to-transparent"></div>
+                <div
+                    class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-teal-100/50 to-transparent rounded-full blur-3xl">
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-100 to-teal-100 rounded-full mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4 text-emerald-600"
+                                aria-hidden="true">
+                                <path
+                                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                </path>
+                                <path d="M20 2v4"></path>
+                                <path d="M22 4h-4"></path>
+                                <circle cx="4" cy="20" r="2"></circle>
+                            </svg><span class="text-sm font-medium text-emerald-700">AI &amp; ML Integration</span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Smart Android
+                            Apps<span class="block text-emerald-600">Powered by ML Kit</span></h2>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed">Leverage Google&#x27;s machine learning
+                            capabilities to build intelligent Android applications with powerful on-device and
+                            cloud-based AI features.</p>
+                        <div class="space-y-4 mb-8">
+                            <div
+                                class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-emerald-200 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-brain w-6 h-6 text-white"
+                                        aria-hidden="true">
+                                        <path d="M12 18V5"></path>
+                                        <path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"></path>
+                                        <path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"></path>
+                                        <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path>
+                                        <path d="M18 18a4 4 0 0 0 2-7.464"></path>
+                                        <path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"></path>
+                                        <path d="M6 18a4 4 0 0 1-2-7.464"></path>
+                                        <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">ML Kit Integration</h4>
+                                    <p class="text-gray-500 text-sm">Google&#x27;s machine learning for text, face, and
+                                        image recognition</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-emerald-200 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-message-square w-6 h-6 text-white"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Google Assistant</h4>
+                                    <p class="text-gray-500 text-sm">Voice-enabled features with Google Assistant
+                                        integration</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-emerald-200 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-chart-line w-6 h-6 text-white"
+                                        aria-hidden="true">
+                                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                        <path d="m19 9-5 5-4-4-3 3"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">TensorFlow Lite</h4>
+                                    <p class="text-gray-500 text-sm">Deploy custom ML models on Android devices</p>
+                                </div>
+                            </div>
+                        </div><a href="ai-software-development.html"><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-9 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 group">Explore
+                                AI Solutions<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></button></a>
+                    </div>
+                    <div class="relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div
+                                class="col-span-2 p-6 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-3xl text-white relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                                <div class="relative z-10">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-monitor w-7 h-7 text-white" aria-hidden="true">
+                                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                                            </svg>
+                                        </div><span class="text-5xl font-bold opacity-20">AI</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">Smart Android Features</h3>
+                                    <p class="text-emerald-100 text-sm">ML Kit, TensorFlow Lite, and ARCore for
+                                        intelligent experiences.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl text-white"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-users w-8 h-8 mb-3 opacity-80"
+                                    aria-hidden="true">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg>
+                                <div class="text-3xl font-bold">3B+</div>
+                                <div class="text-teal-100 text-sm">Users Reached</div>
+                            </div>
+                            <div class="p-5 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl text-white"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-zap w-8 h-8 mb-3 opacity-80"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                    </path>
+                                </svg>
+                                <div class="text-3xl font-bold">4.6★</div>
+                                <div class="text-emerald-100 text-sm">Avg. Rating</div>
+                            </div>
+                            <div class="col-span-2 p-5 bg-emerald-50 rounded-2xl flex items-center gap-4">
+                                <div class="flex -space-x-3">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-2 border-emerald-50 flex items-center justify-center text-xs font-bold text-white">
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-2 border-emerald-50 flex items-center justify-center text-xs font-bold text-white">
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-2 border-emerald-50 flex items-center justify-center text-xs font-bold text-white">
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-2 border-emerald-50 flex items-center justify-center text-xs font-bold text-white">
+                                        +</div>
+                                </div>
+                                <div>
+                                    <div class="text-lg font-semibold text-gray-900">400+ Android Apps</div>
+                                    <div class="text-gray-500 text-sm">Successfully delivered worldwide</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16"><span
+                        class="inline-block px-4 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium mb-4">Our
+                        Process</span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">How We Build Android Apps
+                    </h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="relative group">
+                        <div
+                            class="p-8 bg-white rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all duration-500 h-full hover:shadow-xl hover:-translate-y-2">
+                            <div
+                                class="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                                <span class="text-white font-bold text-xl">01</span>
+                            </div>
+                            <div class="relative z-10 pt-6">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-sparkles w-7 h-7 text-emerald-600"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                        </path>
+                                        <path d="M20 2v4"></path>
+                                        <path d="M22 4h-4"></path>
+                                        <circle cx="4" cy="20" r="2"></circle>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Discovery</h3>
+                                <p class="text-gray-600 leading-relaxed">Understanding your vision and Android
+                                    requirements</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="p-8 bg-white rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all duration-500 h-full hover:shadow-xl hover:-translate-y-2">
+                            <div
+                                class="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                                <span class="text-white font-bold text-xl">02</span>
+                            </div>
+                            <div class="relative z-10 pt-6">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-tablet w-7 h-7 text-emerald-600"
+                                        aria-hidden="true">
+                                        <rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect>
+                                        <line x1="12" x2="12.01" y1="18" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Design</h3>
+                                <p class="text-gray-600 leading-relaxed">Material Design 3 compliant UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="p-8 bg-white rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all duration-500 h-full hover:shadow-xl hover:-translate-y-2">
+                            <div
+                                class="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                                <span class="text-white font-bold text-xl">03</span>
+                            </div>
+                            <div class="relative z-10 pt-6">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-code w-7 h-7 text-emerald-600"
+                                        aria-hidden="true">
+                                        <path d="m16 18 6-6-6-6"></path>
+                                        <path d="m8 6-6 6 6 6"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Development</h3>
+                                <p class="text-gray-600 leading-relaxed">Kotlin-first development with Jetpack</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="p-8 bg-white rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all duration-500 h-full hover:shadow-xl hover:-translate-y-2">
+                            <div
+                                class="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                                <span class="text-white font-bold text-xl">04</span>
+                            </div>
+                            <div class="relative z-10 pt-6">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-shield w-7 h-7 text-emerald-600"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Testing</h3>
+                                <p class="text-gray-600 leading-relaxed">Testing across 20,000+ device configurations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="p-8 bg-white rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all duration-500 h-full hover:shadow-xl hover:-translate-y-2">
+                            <div
+                                class="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                                <span class="text-white font-bold text-xl">05</span>
+                            </div>
+                            <div class="relative z-10 pt-6">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-play w-7 h-7 text-emerald-600"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Play Store</h3>
+                                <p class="text-gray-600 leading-relaxed">Submission and ASO optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div
+                            class="p-8 bg-white rounded-2xl border border-gray-100 hover:border-emerald-200 transition-all duration-500 h-full hover:shadow-xl hover:-translate-y-2">
+                            <div
+                                class="absolute -top-4 -left-4 w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                                <span class="text-white font-bold text-xl">06</span>
+                            </div>
+                            <div class="relative z-10 pt-6">
+                                <div
+                                    class="w-14 h-14 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-zap w-7 h-7 text-emerald-600"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Support</h3>
+                                <p class="text-gray-600 leading-relaxed">Ongoing maintenance and updates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16"><span
+                        class="inline-block px-4 py-1 bg-teal-100 text-teal-600 rounded-full text-sm font-medium mb-4">Tech
+                        Stack</span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Android Technologies We
+                        Master</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div
+                        class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-lg hover:border-emerald-200 transition-all duration-300">
+                        <h3
+                            class="text-emerald-600 font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Languages
+                        </h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">React
+                                Native Cli</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Kotlin</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Java</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">C++</span>
+                        </div>
+                    </div>
+                    <div
+                        class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-lg hover:border-emerald-200 transition-all duration-300">
+                        <h3
+                            class="text-emerald-600 font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Frameworks
+                        </h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Jetpack</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Compose</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Hilt</span>
+                        </div>
+                    </div>
+                    <div
+                        class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-lg hover:border-emerald-200 transition-all duration-300">
+                        <h3
+                            class="text-emerald-600 font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Google Services
+                        </h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Firebase</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">ML
+                                Kit</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">ARCore</span>
+                        </div>
+                    </div>
+                    <div
+                        class="p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:shadow-lg hover:border-emerald-200 transition-all duration-300">
+                        <h3
+                            class="text-emerald-600 font-semibold mb-4 text-sm uppercase tracking-wider flex items-center gap-2">
+                            <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>Tools
+                        </h3>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Android
+                                Studio</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">Gradle</span><span
+                                class="px-4 py-2 bg-white text-gray-700 rounded-lg text-sm border border-gray-200 hover:border-emerald-300 hover:text-emerald-600 transition-all duration-300">ADB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-16 bg-gradient-to-r from-emerald-100 to-teal-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Ready to build your Android app?
+                        </h3>
+                        <p class="text-gray-600">Reach billions of users with a powerful Android application</p>
+                    </div><a href="#"><button
+                            class="inline-flex items-center justify-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-9 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-emerald-500/30 transition-all duration-300 hover:scale-105 whitespace-nowrap">Start
+                            Your Android Project<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-arrow-right ml-2 w-5 h-5" aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></button></a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Modal -->
+    <script>
+        const modal = document.getElementById("getQuoteModal");
+        const openBtn = document.getElementById("getQuoteBtn");
+        const closeBtn = document.getElementById("closeQuoteModal");
+
+        // Open Modal
+        openBtn.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        // Close Modal (X button)
+        closeBtn.addEventListener("click", function () {
+            modal.classList.add("hidden");
+        });
+
+        // Close when clicking outside modal
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <!-- header scroll change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const header = document.getElementById("mainHeader");
+            const links = document.querySelectorAll(".menu-link");
+
+            function handleScroll() {
+
+                // Only apply if screen width < 992px
+                if (window.innerWidth > 992) {
+
+                    if (window.scrollY > 50) {
+
+                        header.classList.remove("bg-transparent");
+                        header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.remove("text-white", "hover:text-pink-400");
+                            link.classList.add("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    } else {
+
+                        header.classList.add("bg-transparent");
+                        header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.add("text-white", "hover:text-pink-400");
+                            link.classList.remove("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    }
+
+                } else {
+                    // Desktop pe always transparent rakho
+                    header.classList.add("bg-transparent");
+                    header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                    links.forEach(link => {
+                        link.classList.add("text-white", "hover:text-pink-400");
+                        link.classList.remove("text-gray-700", "hover:text-pink-600");
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", handleScroll);
+
+        });
+    </script>
+
+
+
+    <script>
+        // hover open in web
+        const menuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenuBtn = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenuBtn.classList.toggle("hidden");
+        });
+
+
+        // mobile resp.. opne acc
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll("#mobile-drop-btn");
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    const content = btn.parentElement.querySelector("#mobile-drop-content");
+                    const arrow = btn.querySelector(".lucide-chevron-down");
+                    content.classList.toggle("hidden");
+                    arrow.classList.toggle("rotate-180");
+                });
+            });
+        });
+    </script>
+
+
+    <!-- preloader -->
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.display = "none";
+            document.querySelector(".preloader-bg").style.display = "none";
+        });
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>

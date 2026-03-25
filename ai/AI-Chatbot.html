@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Main CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/preloader.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/animation-games.css">
+
+    <title>AI Chatbot</title>
+
+</head>
+<style>
+    /* header */
+    .groups {
+        position: relative;
+    }
+
+    /* Default hidden */
+    .mega-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(15px);
+        transition: all 0.3s ease;
+    }
+
+    /* Show on hover */
+    .groups:hover .mega-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+</style>
+
+<body>
+
+
+    <!-- Preloader start-->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+            <div class="loading-text">
+                <span> Buzzonic Ventures</span>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader end-->
+
+
+
+
+
+    <div class="min-h-screen bg-[#05050f] text-white overflow-x-hidden">
+        <section class="relative min-h-[85vh] flex items-center pt-20 overflow-hidden"><canvas class="absolute inset-0"
+                width="2626" height="668"></canvas>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#05050f]/50 via-transparent to-[#05050f]"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-12 md:py-20">
+                <div class="text-center max-w-5xl mx-auto" style="opacity: 1; transform: none;">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-violet-500/10 border border-cyan-500/20 mb-5"
+                        style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-message-square w-4 h-4 text-cyan-400" aria-hidden="true">
+                            <path
+                                d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg><span class="text-cyan-400 text-sm font-medium">AI Chatbot</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-5"><span
+                            class="bg-gradient-to-r from-cyan-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent">AI
+                            Chatbot Development</span><span class="text-white"></span></h1>
+                    <p class="text-base md:text-lg text-gray-400 mb-6 max-w-3xl mx-auto">We develop smart <strong
+                            class="text-gray-300">AI chatbot</strong>,
+                        Solutions to automate customer support and improve business
+                        communication. Our AI-powered chatbots provide instant responses, 24/7 support, and a better
+                        user
+                        experience for websites and mobile apps...
+                    </p>
+
+
+                    <div class="flex justify-center mb-10" style="opacity: 1; transform: none;"><button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-9 relative overflow-hidden group bg-gradient-to-r from-cyan-500 via-violet-500 to-fuchsia-500 hover:from-cyan-400 hover:via-violet-400 hover:to-fuchsia-400 text-white font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(139,92,246,0.4)] px-7 py-5 text-base">
+                            <div
+                                class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/20 to-transparent">
+                            </div><span class="relative z-10 flex items-center gap-2">Build Your Chatbot <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></span>
+                        </button></div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="relative h-8 overflow-hidden">
+            <div class="absolute inset-0 flex items-center" style="opacity: 1;">
+                <div class="w-full h-[2px] bg-gradient-to-r from-cyan-500/50 via-violet-500/50 to-cyan-500/50"
+                    style="transform: none;"></div>
+            </div>
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-400 shadow-lg shadow-cyan-500/50"
+                    style="transform: none;"></div>
+            </div>
+        </div>
+
+
+        <section class="py-12 md:py-16 relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#05050f] via-[#080818] to-[#05050f]"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                <!-- heading -->
+                <div class="text-center mb-10">
+                    <span
+                        class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm font-medium mb-3">
+                        AI Chatbot Features
+                    </span>
+
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+                        Powerful <span
+                            class="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
+                            AI Chatbot Capabilities
+                        </span>
+                    </h2>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    <!-- card 1 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/30 rounded-xl p-5 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            🤖
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Smart AI Conversations</h3>
+                        <p class="text-gray-400 text-sm">
+                            Our chatbot understands user queries and delivers human-like responses using advanced AI
+                            models.
+                        </p>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/30 rounded-xl p-5 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            ⚡
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Instant Responses</h3>
+                        <p class="text-gray-400 text-sm">
+                            Provide real-time answers to customers 24/7 without delays or manual support.
+                        </p>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/30 rounded-xl p-5 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            🌐
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Multi-Platform Integration</h3>
+                        <p class="text-gray-400 text-sm">
+                            Deploy AI chatbots on websites, mobile apps, WhatsApp, Messenger, and other platforms.
+                        </p>
+                    </div>
+
+                    <!-- card 4 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/30 rounded-xl p-5 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            📊
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Analytics & Insights</h3>
+                        <p class="text-gray-400 text-sm">
+                            Track user interactions, conversations, and performance metrics to improve customer
+                            experience.
+                        </p>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/30 rounded-xl p-5 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            🔗
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">API & CRM Integration</h3>
+                        <p class="text-gray-400 text-sm">
+                            Connect with CRM, databases, payment gateways, and business tools easily.
+                        </p>
+                    </div>
+
+                    <!-- card 6 -->
+                    <div
+                        class="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/30 rounded-xl p-5 transition-all group">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-500 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            🔒
+                        </div>
+
+                        <h3 class="font-bold text-white mb-1">Secure & Scalable</h3>
+                        <p class="text-gray-400 text-sm">
+                            Enterprise-level security and scalable infrastructure for growing businesses.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="py-16 md:py-24 bg-gradient-to-b from-slate-900 to-slate-950">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Heading -->
+                <div class="text-center mb-12">
+
+                    <span
+                        class="inline-block px-4 py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-cyan-400 text-sm font-medium mb-4">
+                        Explore Our Chatbot Services
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Powerful <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                            AI Chatbot Solutions
+                        </span>
+                    </h2>
+
+                    <p class="text-gray-400 max-w-2xl mx-auto">
+                        Discover our intelligent AI chatbot development services designed to automate conversations,
+                        improve customer support, and enhance business engagement.
+                    </p>
+
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            AI Chatbot Development
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Build intelligent AI chatbots that automate conversations and provide instant support to
+                            users.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            Customer Support Chatbots
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Automate customer service with AI chatbots that answer questions instantly 24/7.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            WhatsApp & Website Chatbots
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Deploy chatbots on websites, WhatsApp, and messaging platforms for seamless communication.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            AI Sales Chatbots
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Convert visitors into customers using smart AI chatbots that assist in product discovery.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            Chatbot Integration
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Integrate AI chatbots with CRM systems, APIs, and business platforms.
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="group p-6 bg-slate-800/50 border border-slate-700/50 rounded-2xl hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                            AI Analytics & Insights
+                        </h3>
+
+                        <p class="text-gray-400 text-sm mb-3">
+                            Monitor chatbot performance and user interactions with advanced analytics tools.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Open Modal -->
+    <script>
+        const modal = document.getElementById("getQuoteModal");
+        const openBtn = document.getElementById("getQuoteBtn");
+        const closeBtn = document.getElementById("closeQuoteModal");
+
+        // Open Modal
+        openBtn.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        // Close Modal (X button)
+        closeBtn.addEventListener("click", function () {
+            modal.classList.add("hidden");
+        });
+
+        // Close when clicking outside modal
+        modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    </script>
+
+
+
+    <!-- header scroll change -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const header = document.getElementById("mainHeader");
+            const links = document.querySelectorAll(".menu-link");
+
+            function handleScroll() {
+
+                // Only apply if screen width < 992px
+                if (window.innerWidth > 992) {
+
+                    if (window.scrollY > 50) {
+
+                        header.classList.remove("bg-transparent");
+                        header.classList.add("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.remove("text-white", "hover:text-pink-400");
+                            link.classList.add("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    } else {
+
+                        header.classList.add("bg-transparent");
+                        header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                        links.forEach(link => {
+                            link.classList.add("text-white", "hover:text-pink-400");
+                            link.classList.remove("text-gray-700", "hover:text-pink-600");
+                        });
+
+                    }
+
+                } else {
+                    // Desktop pe always transparent rakho
+                    header.classList.add("bg-transparent");
+                    header.classList.remove("bg-white/95", "backdrop-blur-md", "shadow-lg", "shadow-gray-200/50");
+
+                    links.forEach(link => {
+                        link.classList.add("text-white", "hover:text-pink-400");
+                        link.classList.remove("text-gray-700", "hover:text-pink-600");
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", handleScroll);
+
+        });
+    </script>
+
+
+
+    <script>
+        // hover open in web
+        const menuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenuBtn = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", function () {
+            mobileMenuBtn.classList.toggle("hidden");
+        });
+
+
+        // mobile resp.. opne acc
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll("#mobile-drop-btn");
+            buttons.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    const content = btn.parentElement.querySelector("#mobile-drop-content");
+                    const arrow = btn.querySelector(".lucide-chevron-down");
+                    content.classList.toggle("hidden");
+                    arrow.classList.toggle("rotate-180");
+                });
+            });
+        });
+    </script>
+
+
+    <!-- preloader -->
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.display = "none";
+            document.querySelector(".preloader-bg").style.display = "none";
+        });
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>
